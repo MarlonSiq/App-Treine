@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Projeto Treine!</title>
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,400;1,600&display=swap" rel="stylesheet">
+    <link rel="icon" href="https://lh3.googleusercontent.com/pw/AP1GczOH8OzwZ2nWnRF4lqDCSO0z9Eed4f95DL5U_3dsuZ04Nlu9i1VBSQce9u1-XtNZGi9v7j_p9LQpJCp-a936mtusdEuiKkQsLQR-3J3XezFsjZz6YMS2cjfituoaP_xsG_OpzBD6rJ1HULLIlVV6ErOf=w700-h700-s-no-gm?authuser=0" type="image/png">
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="projeto-estilo.css">
+</head>
+<body class="body">
+    
+    
+    
+         <!-- botao de tema -->
+<div id="tema" class="button-theme-proj  holder">
+                <button onclick="toggleTheme()" class="theme-toggle-proj">
+                    <img src="https://lh3.googleusercontent.com/pw/AP1GczNjQQ8_t14g2nx_hTs30-Gx-l6hsYowBBaDgk6wG1lBD3-R5Wsb1mewknq6fY--jDmEKfcomZ1Mnf-wkEnov8_tZBHeqFCjdSyjAuZ18cVHNlnOCzkinMKApfEcAC2KmdviGvxl1OMeSRAaH70J3RUV=w700-h700-s-no-gm?authuser=0" alt="" class="icon-light" style="display:flex;">
+                   <img src="https://lh3.googleusercontent.com/pw/AP1GczPJYZqwdBrIRZ1Cz9sdenuu2bH8kDOVl4ZshR5ooWavBWTFS68eii4RFE7ABXV5OMrT0w1xgHdQfsMDvXwpzTUCbF9Xgf_GiFoshn-x-CKv8S9d9NvbU8dZ-KfE_3igkatm5AbYEBrHQepj-JLW_Unp=w700-h700-s-no-gm?authuser=0" alt="" class="icon-dark" style="display:none;">
+                </button>
+</div>
+
+<a href="javascript:history.back()" id="back"><</a>
+
+  <!-- botao de tema mobile -->
+<div class="container-theme-mob">
+        <div class="button-back-proj-mob">
+            <a href="javascript:history.back()"><</a>
+        </div>
+        <div class="separador"></div>
+        <div class="button-theme-proj-mob  holder">
+                <button onclick="toggleTheme()" class="theme-toggle-proj">
+                    <img src="https://lh3.googleusercontent.com/pw/AP1GczNjQQ8_t14g2nx_hTs30-Gx-l6hsYowBBaDgk6wG1lBD3-R5Wsb1mewknq6fY--jDmEKfcomZ1Mnf-wkEnov8_tZBHeqFCjdSyjAuZ18cVHNlnOCzkinMKApfEcAC2KmdviGvxl1OMeSRAaH70J3RUV=w700-h700-s-no-gm?authuser=0" alt="" class="icon-light" style="display:flex;">
+                   <img src="https://lh3.googleusercontent.com/pw/AP1GczPJYZqwdBrIRZ1Cz9sdenuu2bH8kDOVl4ZshR5ooWavBWTFS68eii4RFE7ABXV5OMrT0w1xgHdQfsMDvXwpzTUCbF9Xgf_GiFoshn-x-CKv8S9d9NvbU8dZ-KfE_3igkatm5AbYEBrHQepj-JLW_Unp=w700-h700-s-no-gm?authuser=0" alt="" class="icon-dark" style="display:none;">
+                </button>
+        </div>
+</div>
+
+
+
+<div class="banner">
+    <div>
+        <p><span>Treine!</span> Sobre o Projeto</p>
+    </div>
+</div>        
+            
+    <div class="container-proj-infos">
+            
+            
+               
+            <!-- card Base de Dados -->
+            <div class="conteudo">
+                <div class="title">Banco de Dados</div>
+                <div class="text">
+                    <p>Entenda sobre o que cada dificuldade cobra de seu conhecimento no inglês.</p>
+                    <p>Atualmente existe 4 opções disponíveis para treinar:</p>
+                    <div class="container-photo">
+                        <div class="icon-photo"><img src="https://lh3.googleusercontent.com/pw/AP1GczORHmFv9nxeQ3A5RJHlffzRsngCsGjMRCwuxSXsy99mAIzsRZZjEXQyFFf9tP8zxkrfFpmJ3W8Tg3_mhsz7wLw3gOc3h4RuZqBdVUOGxWxNt17WZKalVRi7g92knWa_sSh6DvDpy-lb4bbO9ie9SiS_=w700-h700-s-no-gm?authuser=0" alt="">números</div>
+                        <div class="icon-photo"><img src="https://lh3.googleusercontent.com/pw/AP1GczMuStiviZ0Q_6pysZYA59V-njFOlyAcnGD4L8tBjMJeMiafpLt0_pXoQGn1x4DyQVEcort5m5zxviJ422ObR4e7jDWMKe2zgxxe4NOy8bVn-BmHjzRPu-k7lXFIKNmRnWPGze5CNTCfKo1Otbtg4cWM=w700-h700-s-no-gm?authuser=0" alt="">matemática</div>
+                        <div class="icon-photo"><img src="https://lh3.googleusercontent.com/pw/AP1GczPxPWD49VFlfMyTI_ys-k5fIPgb5lCAFiQ5nvkVFPe9bP4fY8h0fdDTB2A4BB9xzLEwV2Mp4kcp4APgARIujN3LPFhTlM9Bh-jtiwTHnlpencpdIT4Lic6xSm9ufMU3ZNmfxiognG3oPsy5dND3-TXT=w700-h700-s-no-gm?authuser=0" alt="">data</div>
+                        <div class="icon-photo"><img src="https://lh3.googleusercontent.com/pw/AP1GczOXCGua-YINw-j7a3aR7G1BXD4kE4Gn7jiDnD2xa5rpH4WufVNRaHLOjuSyczr8JLS1JfRopI-Qw-aanYibwnSDErSEI7U7dtdSlfMTmRt2eY30ByHoZMwtZqHmq7hpfbV50a1tKQU7sShPHLcVZNuE=w700-h700-s-no-gm?authuser=0" alt="">hora</div>
+                    </div>
+                <br>     
+                </div>
+                <div class="title-do-bttn">Banco de Dados</div>
+                <div class="button" onclick="toggleDiv(this)">Visualizar</div>
+                <div class="escondido" id="escondido">
+                    <h3 class="h3">Números</h3>
+                    <div class="sub-escondido">
+                        
+                        <h4>easy</h4>
+                        <p>0 – 12</p>
+                        <h4>medium</h4>
+                        <p>10 – 60, 70, 80, 90, 100, 121, 155</p>
+                        <h4>hard</h4>
+                        <p>50 – 1.010 (*nem todos listados). 2060, 3480, 5800.</p>
+                        <h4>extreme</h4>
+                        <p>500, 1K, 100K, 268K, 1M, 1B, 1T.</p>
+                    </div>
+                    <br>
+                    <br>
+                    <h3 class="h3">Matemática</h3>
+                    <div class="sub-escondido">
+                        
+                        <h4>easy</h4>
+                        <p>Símbolos básicos: +, -, ×, ÷, =, '<b> , </b>'(comma), %.</p>
+                        <h4>medium</h4>
+                        <p>Símbolos básicos, mais: <, >, ≤, ≥, π, X², X³</p>
+                        <h4>hard</h4>
+                        <p>Contas matemáticas simples</p>
+                        <p>Ex.: 1+1=2</p>
+                        <h4>extreme</h4>
+                        <p>Contas matemáticas mais complicadas</p>
+                        <p>Ex.: 15÷3=5</p>
+                    </div>
+                    <br>
+                    <br>
+                    <h3 class="h3">Data</h3>
+                    <div class="sub-escondido">
+                        
+                        <h4>easy</h4>
+                        <p>— — —</p>
+                        <!-- <h4>medium</h4>
+                        <h4>hard</h4>
+                        <h4>extreme</h4> -->
+                    </div>
+                    <br>
+                    <br>
+                    <h3 class="h3">Hora</h3>
+                    <div class="sub-escondido">
+                        
+                        <h4>easy</h4>
+                        <p>— — —</p>
+                        <!-- <h4>medium</h4>
+                        <h4>hard</h4>
+                        <h4>extreme</h4> -->
+                    </div>
+                    
+                </div>
+            </div>
+            
+            
+            <!-- card Versoes -->
+            <div class="conteudo">
+                <div class="title">Versões</div>
+                <div class="text">
+                    Durante a construção do site, foi definido versões para ajudar na organização interna, backup e evolução. Abaixo está listado todas as versões:                    
+                </div>
+                <div class="title-do-bttn">Versões</div>
+                <div class="button" onclick="toggleDiv(this)">Visualizar</div>
+                <div class="escondido" id="escondido">
+                    <h3 class="h3">2.04</h3>
+                    <div class="sub-escondido">
+                        
+                        <h4>V2.04</h4>
+                        <p>Data: **/08/2025</p>
+                        <p>O que será adicionado:</p>
+                        <ul>
+                            <li>Áudio da pronúncia oral em inglês.</li>
+                        </ul>
+                    </div>
+                <br>
+                    <br>
+                
+                <h3 class="h3">V2.03</h3>
+                    <div class="sub-escondido">
+                        <h4>V2.03.03.02</h4>
+                        <p>Data: 31/07/2025</p>  
+                        <p>O que foi adicionado:</p>
+                        <ul>
+                            <li>Melhorias no visual;</li>
+                            <li>Correções de falhas;</li>
+                            <li>Melhoria no script para: lógica de sorteio, instabilidades;</li>    
+                            <li>Adição do Histórico Completo.</li>                     
+                        </ul>
+                        <h4>V2.03.03</h4>
+                        <p>Data: 26/07/2025</p>  
+                        <p>O que foi adicionado:</p>
+                        <ul>
+                            <li>Página "Sobre o Projeto";</li>
+                            <li>Fundo diferente para botões 'options' ativos;</li>
+                            <li>Em "Sobre o Projeto" criei um menu de historyBack e troca de tema para mobile;</li>
+                            <li>Botão historyBack (voltar) para desktop.</li>
+                        </ul>
+                        <h4>V2.03.02</h4>    
+                        <p>Data: 24/07/2025</p>  
+                        <p>O que foi adicionado:</p>
+                        <ul>
+                            <li>Favicon;</li>
+                            <li>Melhoria no script para aceitar melhor as respostas do usuário.</li>                 
+                        </ul>        
+                        <h4>V2.03</h4>    
+                        <p>Data: 22/07/2025</p>  
+                        <p>O que foi adicionado:</p>
+                        <ul>
+                            <li>Fonte personalizada (Prompt);</li>
+                            <li>Atualização no Script: para melhorar as possibilidades de resposta;</li>
+                            <li>Script com os novos ícones de Tema: Modo Escuro e Claro;</li>
+                            <li>Design dos cards melhorados.</li>
+                        </ul>
+                    </div>
+                <br>
+                    <br>
+                    <h3 class="h3">V2.02</h3>
+                    <div class="sub-escondido">
+                        <h4>V2.02</h4>
+                        <p>Data: 21/07/2025</p>                                                
+                    </div>
+                    <br>
+                    <br>
+                    <h3 class="h3">V2.01</h3>
+                    <div class="sub-escondido">
+                        
+                        <h4>Início do Projeto</h4>
+                        <p>15/07/2025</p>  
+                        <p>O que foi adicionado:</p>
+                        <ul>
+                            <li>Cores inspiradas na V1.01;</li>
+                            <li>Criação da V2.01.</li>                           
+                        </ul>
+                        <br>
+                        <img src="https://lh3.googleusercontent.com/pw/AP1GczNEhIbBa049el99m0a_U46pbX-_cJrOV074jMKGlnBYOKUEqt_PeCSQBpFEGAv4QKtqTXmV-wLcaI1t0z8gydC1dujGcFrE1rEFyU9Y5Lj_sI3BiuU4E8_o9wEgS2s7-KF7W_yHI1vjfc_r-VM7GGsu=w1080-h706-s-no-gm?authuser=0" alt="">
+                        <br>
+                        <p>Mobile:</p>
+                        <img src="https://lh3.googleusercontent.com/pw/AP1GczMw8Zr-_gu3w_I7mrwBN1wssebyKS-x_a_w6md5uy3Xjkku1INUOeF5p8sVDG74VwII-H4LeHXUpIygzA8Z7eW8svg9315oNQoVpcvMNRRiy91_wOg-dKYyRrM8IFzienU0fq6vQmkThOx1DkY0VPIl=w903-h1958-s-no-gm?authuser=0" class="img"alt="">                                             
+                    </div>
+                    <br>
+                    <h3 class="h3">V1.01</h3>
+                    <div class="sub-escondido">
+                        <h4>V1.01</h4>
+                        <p>Data: 25/02/2025</p>      
+                        <img src="https://lh3.googleusercontent.com/pw/AP1GczPufkfz9-2JpCyilYJTrQfiCq21QUKarIy9bISUqU4xrzcux-EuR-VTWxa3afbG5JZnl3IIv07H3ItKTbC2iYSnYzpTWidS1yywh9OKdJy1hJlNxwcqZy9Ffcage2NZH_6AH_bQWxewFlXnq0-DB59x=w1080-h464-s-no-gm?authuser=0" alt="">                                          
+                    </div>
+                    
+                    
+                </div>
+            </div>
+            
+            
+            <!-- card Projeto -->
+            <div class="conteudo">
+                <div class="title">O Projeto</div>
+                <div class="text">
+                    A ideia de construir um site para treinar inglês – com foco especial em números – surgiu quando Marlon, ao estudar os números básicos,  não encontrou nenhum site que oferecesse exercícios ativos para praticar e fixar o conteúdo de forma prática.
+                </div>
+                <div class="title-do-bttn">O Projeto</div>
+                <div class="button" onclick="toggleDiv(this)">Visualizar</div>
+                <div class="escondido" id="escondido">
+                    <p>Dessa necessidade, nasceu a versão 1.01, desenvolvida integralmente com o Chat GPT(visual e lógica), permitindo de forma simples treinar sobre os números.</p>
+                    <p>Cinco meses depois, surgiu a iniciativa de criar uma nova versão. Com novos conteúdos, funcionalidades e visual aprimorado. A nova versão (V2.01), teve o design, e HTML e CSS feito por Marlon. Enquanto a lógica (JavaScript), foi estruturado com o Chat GPT.</p> 
+                    <p>Além de diversas correções, testes e ajustes realizados por Marlon para garantir que tudo funcione com fluidez.</p>
+                </div>
+            </div>
+            
+            <!-- card Sugestoes -->
+            <div class="conteudo" id="card-notificar-sugestão">
+                <div class="title sem-destaque">Sugestões</div>
+                <div class="text">
+                    Vou adorar saber sua sugestão para melhoria do Treine! Leia em "Visualizar" como mandar sua ideia.
+                    
+                </div>
+                <div class="button" onclick="toggleDiv(this)">Visualizar</div>
+                <div class="escondido" id="escondido">
+                    <br>
+                        <p>Faça sua sugestão de melhoria pelo link:</p>
+                        <br>
+                       <div class="button-two"><a href="mailto:marlonsiq.creations@gmail.com?subject=Treine!%20Sugestão&body=Sua%20mensagem%20:%20">Enviar email</a></div>
+                        <p>Seguindo o passo a passo abaixo:</p>
+                        <br>
+                        <br>
+                    <div class="sub-escondido">
+                        <p>**É importante deixar "Treine! Sugestão" como titúlo para facilidar na organização interna;</p>
+                        <p>E explique sua ideia com o <b>máximo de detalhes possível</b>.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- card Notificar Erro -->
+            <div class="conteudo" id="card-notificar-erro">
+                <div class="title sem-destaque">Notificar Erro</div>
+                <div class="text">
+                    Notou algum erro? Deixe-me saber enviando um email. Leia em "Visualizar" como mandar o erro encontrado.
+                </div>
+                <div class="button" onclick="toggleDiv(this)">Visualizar</div>
+                <div class="escondido" id="escondido">
+                        <br>
+                        <p>Notifique o erro encontrado pelo link:</p>
+                        <br>
+                       <div class="button-two"><a href="mailto:marlonsiq.creations@gmail.com?subject=Treine!%20Erro&body=Sua%20mensagem%20:%20">Enviar email</a></div>
+                        <p>Seguindo o passo a passo abaixo:</p>
+                        <br>
+                        <br>
+                    <div class="sub-escondido">
+                        <p>**É importante deixar "Treine! Erro" como titúlo para facilidar na organização interna;</p>
+                        <p>E explique o erro encontrado com o <b>máximo de detalhes possível</b>. Se puder, anexe uma ou mais imagens para facilitar a análise.</p>
+                    </div>
+               
+                </div>
+            </div>
+            
+            
+            
+            
+            
+    </div>
+    
+    
+    
+<script>
+  function toggleDiv(button) {
+  const card = button.closest('.conteudo');
+  const div = card.querySelector('.escondido');
+  const titleInfo = card.querySelector('.title-do-bttn');
+  const title = card.querySelector('.title'); // Pega a div .title dentro do card
+
+  if (div.style.display === 'none' || div.style.display === '') {
+    div.style.display = 'flex';
+    button.textContent = 'Esconder';
+    button.classList.add('sticky-button');
+    button.classList.add('button-active');
+
+    if (titleInfo) titleInfo.style.display = 'block';
+
+    // Aplica .title-active, se não tiver .sem-destaque
+    if (title && !title.classList.contains('sem-destaque')) {
+      title.classList.add('title-active');
+    }
+
+  } else {
+    div.style.display = 'none';
+    button.textContent = 'Visualizar';
+    button.classList.remove('sticky-button');
+    button.classList.remove('button-active');
+
+    if (titleInfo) titleInfo.style.display = 'none';
+
+    // Remove .title-active, se não tiver .sem-destaque
+    if (title && !title.classList.contains('sem-destaque')) {
+      title.classList.remove('title-active');
+    }
+
+    const yOffset = -30;
+    const y = card.getBoundingClientRect().top + window.pageYOffset + yOffset;
+    window.scrollTo({ top: y, behavior: 'smooth' });
+  }
+}
+
+  
+  function toggleTheme() {
+  const root = document.documentElement;
+  const isDark = root.getAttribute("data-theme") === "dark";
+
+  const newTheme = isDark ? "light" : "dark";
+  root.setAttribute("data-theme", newTheme);
+  localStorage.setItem("theme", newTheme);
+
+  // Atualiza TODOS os ícones (em todos os botões)
+  document.querySelectorAll(".icon-light").forEach(el => {
+    el.style.display = newTheme === "dark" ? "none" : "flex";
+  });
+
+  document.querySelectorAll(".icon-dark").forEach(el => {
+    el.style.display = newTheme === "dark" ? "flex" : "none";
+  });
+}
+
+window.onload = function () {
+  // === TEMA ===
+  const savedTheme = localStorage.getItem("theme") || "light";
+  const root = document.documentElement;
+  root.setAttribute("data-theme", savedTheme);
+
+  const isDark = savedTheme === "dark";
+  document.querySelectorAll(".icon-light").forEach(el => {
+    el.style.display = isDark ? "none" : "flex";
+  });
+
+  document.querySelectorAll(".icon-dark").forEach(el => {
+    el.style.display = isDark ? "flex" : "none";
+  });
+  };
+  
+  
+</script> 
+
+<footer>
+    <div class="footer">
+    <p class="fter-item">©2025 | V.01.02</p>
+    <p class="treine">Treine!</p>
+    <p class="fter-item">byMarlonSiq</p>
+    </div>
+</footer>
+</body>
+</html>
