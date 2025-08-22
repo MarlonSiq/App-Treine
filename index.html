@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Treine!</title>
+
+  <!-- Fontes e Ícone -->
+  <link href="https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,400;1,600;1,700&display=swap" rel="stylesheet">
+  <link rel="icon" href="https://lh3.googleusercontent.com/pw/AP1GczOH8OzwZ2nWnRF4lqDCSO0z9Eed4f95DL5U_3dsuZ04Nlu9i1VBSQce9u1-XtNZGi9v7j_p9LQpJCp-a936mtusdEuiKkQsLQR-3J3XezFsjZz6YMS2cjfituoaP_xsG_OpzBD6rJ1HULLIlVV6ErOf=w700-h700-s-no-gm?authuser=0" type="image/png">
+
+  <!-- Estilos -->
+  <link rel="stylesheet" href="estilo.css">
+  <link rel="stylesheet" href="projeto-estilo.css">
+</head>
+<body>
+
+  <!-- Scripts iniciais -->
+  <script src="button-nav.js"></script>
+  <script src="button-nav-mobile.js"></script>
+
+  <!-- Navegação Desktop -->
+  <div class="nav">
+      <button onclick="reiniciarSite()" id="resetHistoryBtn">
+    <div class="nav-button" treine=".">Treine!</div>
+    </button>
+
+    <div class="div-options">
+      <div class="option " onclick="ativar(this); setCategory('números')">
+        <img src="https://lh3.googleusercontent.com/pw/AP1GczORHmFv9nxeQ3A5RJHlffzRsngCsGjMRCwuxSXsy99mAIzsRZZjEXQyFFf9tP8zxkrfFpmJ3W8Tg3_mhsz7wLw3gOc3h4RuZqBdVUOGxWxNt17WZKalVRi7g92knWa_sSh6DvDpy-lb4bbO9ie9SiS_=w700-h700-s-no-gm?authuser=0" alt=""><p class="active">Números</p>
+      </div>
+      <div class="option" onclick="ativar(this); setCategory('matemática')">
+        <img src="https://lh3.googleusercontent.com/pw/AP1GczNQvXNlrnsbyKi2_4IYSZv60RzjciHHbf2je3ETxgW0Y14jgVs1ReKqEgpbZ5fOgo2cmUCz3ehbgrWLasUn0gjLZgm2iuG3-XdZDsrV1qHc7NemwTt6JcSBT7E0Nwgnmn8tCPSUIjZG1dNZ1WJxHQnp=w700-h700-s-no-gm?authuser=0" alt=""><p>Matemática</p>
+      </div>
+      <div class="option" onclick="ativar(this); setCategory('data')">
+        <img src="https://lh3.googleusercontent.com/pw/AP1GczPxPWD49VFlfMyTI_ys-k5fIPgb5lCAFiQ5nvkVFPe9bP4fY8h0fdDTB2A4BB9xzLEwV2Mp4kcp4APgARIujN3LPFhTlM9Bh-jtiwTHnlpencpdIT4Lic6xSm9ufMU3ZNmfxiognG3oPsy5dND3-TXT=w700-h700-s-no-gm?authuser=0" alt=""><p>Data</p>
+      </div>
+      <div class="option" onclick="ativar(this); setCategory('hora')">
+        <img src="https://lh3.googleusercontent.com/pw/AP1GczOXCGua-YINw-j7a3aR7G1BXD4kE4Gn7jiDnD2xa5rpH4WufVNRaHLOjuSyczr8JLS1JfRopI-Qw-aanYibwnSDErSEI7U7dtdSlfMTmRt2eY30ByHoZMwtZqHmq7hpfbV50a1tKQU7sShPHLcVZNuE=w700-h700-s-no-gm?authuser=0" alt=""><p>Hora</p>
+      </div>
+    </div>
+
+    <!-- Botão tema desktop -->
+    <div class="nav-button holder">
+      <button onclick="toggleTheme()" class="theme-toggle">
+        <img src="https://lh3.googleusercontent.com/pw/AP1GczNjQQ8_t14g2nx_hTs30-Gx-l6hsYowBBaDgk6wG1lBD3-R5Wsb1mewknq6fY--jDmEKfcomZ1Mnf-wkEnov8_tZBHeqFCjdSyjAuZ18cVHNlnOCzkinMKApfEcAC2KmdviGvxl1OMeSRAaH70J3RUV=w700-h700-s-no-gm?authuser=0" class="icon-light" style="display:flex;">
+        <img src="https://lh3.googleusercontent.com/pw/AP1GczPJYZqwdBrIRZ1Cz9sdenuu2bH8kDOVl4ZshR5ooWavBWTFS68eii4RFE7ABXV5OMrT0w1xgHdQfsMDvXwpzTUCbF9Xgf_GiFoshn-x-CKv8S9d9NvbU8dZ-KfE_3igkatm5AbYEBrHQepj-JLW_Unp=w700-h700-s-no-gm?authuser=0" class="icon-dark" style="display:none;">
+      </button>
+    </div>
+  </div>
+
+
+
+  <!-- Navegação Mobile -->
+  <div class="nav-mobile">
+    <div class="nav-button-mobile" treine=".">T!</div>
+
+    <div class="div-options-mobile">
+      <div class="option-mob active" onclick="ativar(this); setCategory('números')">
+        <img src="https://lh3.googleusercontent.com/pw/AP1GczORHmFv9nxeQ3A5RJHlffzRsngCsGjMRCwuxSXsy99mAIzsRZZjEXQyFFf9tP8zxkrfFpmJ3W8Tg3_mhsz7wLw3gOc3h4RuZqBdVUOGxWxNt17WZKalVRi7g92knWa_sSh6DvDpy-lb4bbO9ie9SiS_=w700-h700-s-no-gm?authuser=0" alt=""><p class="active"></p>
+      </div>
+      <div class="option-mob" onclick="ativar(this); setCategory('matemática')">
+        <img src="https://lh3.googleusercontent.com/pw/AP1GczNQvXNlrnsbyKi2_4IYSZv60RzjciHHbf2je3ETxgW0Y14jgVs1ReKqEgpbZ5fOgo2cmUCz3ehbgrWLasUn0gjLZgm2iuG3-XdZDsrV1qHc7NemwTt6JcSBT7E0Nwgnmn8tCPSUIjZG1dNZ1WJxHQnp=w700-h700-s-no-gm?authuser=0" alt="">
+      </div>
+      <div class="option-mob" onclick="ativar(this); setCategory('data')">
+        <img src="https://lh3.googleusercontent.com/pw/AP1GczPxPWD49VFlfMyTI_ys-k5fIPgb5lCAFiQ5nvkVFPe9bP4fY8h0fdDTB2A4BB9xzLEwV2Mp4kcp4APgARIujN3LPFhTlM9Bh-jtiwTHnlpencpdIT4Lic6xSm9ufMU3ZNmfxiognG3oPsy5dND3-TXT=w700-h700-s-no-gm?authuser=0" alt="">
+      </div>
+      <div class="option-mob" onclick="ativar(this); setCategory('hora')">
+        <img src="https://lh3.googleusercontent.com/pw/AP1GczOXCGua-YINw-j7a3aR7G1BXD4kE4Gn7jiDnD2xa5rpH4WufVNRaHLOjuSyczr8JLS1JfRopI-Qw-aanYibwnSDErSEI7U7dtdSlfMTmRt2eY30ByHoZMwtZqHmq7hpfbV50a1tKQU7sShPHLcVZNuE=w700-h700-s-no-gm?authuser=0" alt="">
+      </div>
+    </div>
+
+    <!-- Botão tema mobile -->
+    <div class="nav-button-mobile holder">
+      <button onclick="toggleTheme()" class="theme-toggle">
+        <img src="https://lh3.googleusercontent.com/pw/AP1GczNjQQ8_t14g2nx_hTs30-Gx-l6hsYowBBaDgk6wG1lBD3-R5Wsb1mewknq6fY--jDmEKfcomZ1Mnf-wkEnov8_tZBHeqFCjdSyjAuZ18cVHNlnOCzkinMKApfEcAC2KmdviGvxl1OMeSRAaH70J3RUV=w700-h700-s-no-gm?authuser=0" class="icon-light" style="display:flex;">
+        <img src="https://lh3.googleusercontent.com/pw/AP1GczPJYZqwdBrIRZ1Cz9sdenuu2bH8kDOVl4ZshR5ooWavBWTFS68eii4RFE7ABXV5OMrT0w1xgHdQfsMDvXwpzTUCbF9Xgf_GiFoshn-x-CKv8S9d9NvbU8dZ-KfE_3igkatm5AbYEBrHQepj-JLW_Unp=w700-h700-s-no-gm?authuser=0" class="icon-dark" style="display:none;">
+      </button>
+    </div>
+  </div>
+
+  <!-- Título principal -->
+  <h1 class="h1">Treine <span id="categoriaTexto"></span> em inglês.</h1>
+
+  <!-- Conteúdo principal -->
+  <div class="principal-content">
+
+    <!-- Card: Configurações -->
+    <div class="cardA a">
+        <p class="p-dificu">Dificuldade:</p>
+      <div class="container-dificuldades">
+        <button class="difficulty-button active2" onclick="ativar2(this); setDifficulty('easy')">Easy</button>
+        <button class="difficulty-button" onclick="ativar2(this); setDifficulty('medium')">Medium</button>
+        <button class="difficulty-button" onclick="ativar2(this); setDifficulty('hard')">Hard</button>
+        <button class="difficulty-button" onclick="ativar2(this); setDifficulty('extreme')">Extreme</button>
+      </div>
+
+      <div class="cont-dificuldades-Inv"><p><b>Easy</b></p></div>
+        <!-- <div class="cont-dificuldades-Inv"><p>Dificuldade: <b>Easy</b></p></div> -->
+
+      <div class="containerCounter">
+        <div class="tittle">
+          <span id="correctCount2">0</span>
+          <p>X</p>
+          <span id="incorrectCount2">0</span>
+        </div>
+
+        <div class="cardBox">
+          <div class="cardBox-two">
+            <p>Respostas Corretas: <span id="correctCount">0</span></p>
+            <p>Respostas Incorretas: <span id="incorrectCount">0</span></p>
+          </div>
+        </div>
+      </div>
+
+      <a href="projeto.html"><button class="projeto-button">Sobre o Projeto</button></a>
+    </div>
+
+    <!-- Card: Exercício -->
+    <div class="container-column cardA b">
+      <div class="tittle" id="counter-mob">
+        <span id="correctCount3">0</span>
+        <p>X</p>
+        <span id="incorrectCount3">0</span>
+      </div>
+
+      <div id="painel-visu">
+        <p id="numberDisplay" class="texto"></p>
+      </div>
+
+      <div class="container-row inputs">
+        <input type="text" id="answer" placeholder="Sua resposta">
+        <button onclick="checkAnswer()" id="btton-check">OK</button>
+      </div>
+
+      <p id="feedback"></p>
+    </div>
+
+    <!-- Card: Histórico -->
+    <div class="cardA c">
+      <button onclick="reiniciarHistorico()" id="resetHistoryBtn" class="reiniciar-button">Reiniciar histórico</button>
+      
+      <div class="containerHist">    
+            <div class="tittleHist">
+                  <p>Histórico</p>
+                  <div>
+                    <button class="bttn-hst-open">+</button>
+                    <button class="bttn-hst-close" style="display: none;">-</button>
+                  </div>
+            </div>
+
+            <div class="cardBox">
+              <div id="respostaVisual"></div>
+            </div>
+      </div>
+      <p class="creditos">V2.03.03.02 | by MarlonSiq</p>
+    </div>
+  </div>
+
+
+
+<div class="painel-historico" style="display: none;">
+<h2>Histórico completo</h2>
+<div id="historicoCompletoPainel"></div>
+</div>
+
+  <!-- Links extra -->
+  <div class="container-links-proj">
+    <a href="projeto.html#card-notificar-erro">Encontrou Erro?</a>
+    <a href="projeto.html#card-notificar-sugestão">Mande Sugestão</a>
+  </div>
+
+  <!-- Scripts finais -->
+  <script src="banco-de-dados.js"></script>
+  <script src="script.js" defer></script>
+
+</body>
+</html>
