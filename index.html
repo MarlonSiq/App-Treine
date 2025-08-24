@@ -3,10 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <title>Treine!</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- Fontes e Ícone -->
   <link href="https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,400;1,600;1,700&display=swap" rel="stylesheet">
   <link rel="icon" href="https://lh3.googleusercontent.com/pw/AP1GczOH8OzwZ2nWnRF4lqDCSO0z9Eed4f95DL5U_3dsuZ04Nlu9i1VBSQce9u1-XtNZGi9v7j_p9LQpJCp-a936mtusdEuiKkQsLQR-3J3XezFsjZz6YMS2cjfituoaP_xsG_OpzBD6rJ1HULLIlVV6ErOf=w700-h700-s-no-gm?authuser=0" type="image/png">
+ 
+ <link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#BCD6F1">
 
   <!-- Estilos -->
   <link rel="stylesheet" href="estilo.css">
@@ -170,8 +173,15 @@
   </div>
 
   <!-- Scripts finais -->
-  <script src="banco-de-dados.js"></script>
+  <script src="banco-de-dados.js"></script
+  >
   <script src="script.js" defer></script>
-
+    <script>
+      if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('service-worker.js')
+          .then(() => console.log("Service Worker registrado!"));
+      }
+    </script>
+    
 </body>
 </html>
