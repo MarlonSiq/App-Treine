@@ -13,20 +13,21 @@
   <link rel="stylesheet" href="projeto-estilo.css">
   
   <style>
-      .body {
+    .body {
           width: 100vw;
           height: 80vh;
           display: flex;
           align-items: center;   
           justify-content: center;
           align-content: center;
+          background: var(--back-card-A-B-Nav);
       }
       
 .error{
     display: flex;
     flex-direction: row;
     align-items: center;   
-    background: yellow;
+    background:;
     padding: 0px 30px;
     gap: 30px;
     font-size: 2rem;
@@ -38,24 +39,35 @@
 
 a {
     text-decoration: none;
-    padding: 5px 20px;
-    background: red;
-    top: 30px;
+    width: 320px;
+    height: 50px;
+    text-align:center;
+    align-content: center;  
+    background: var(--back-option-e-mob);
+    color: white;
+    border-radius: 5px;
 }
 .alinhar-body{
-    display:inline-flex;
+    display:flex;
     flex-direction: column;
     height: ;
-    align-content: ;  
-    background: black;
+    text-align: center; 
+    align-items: center;
+    background: var(--background);
+    padding: 50px 150px;
+    border-radius: 30px;
+    gap: 20px;
 }
   </style>
+  
 </head>
 <body class="body">
 <span class="alinhar-body">
         <div class="error"><h1 id="ops">Ops...</h1><h1>Erro 404</h1></div>
         
         <a href="index.html">Ir para página inicial</a>
+        
+        <p>App Treine!</p>
 </span>
 </body>
 </html>
